@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard | Find & Help</title>
+<link rel="stylesheet" href="../css/index.css">
+<link rel="stylesheet" href="../css/admin-dashboard.css">
+</head>
+<body class="admin-page">
+
+<header class="navbar">
+<div class="logo">
+<span class="logo-icon">+</span>
+<span>Find<span class="logo-highlight">&</span>Help</span>
+</div>
+<nav class="nav-links">
+<a href="../index.html">Home</a>
+<a href="search.html">Cases</a>
+<a href="create-case.html">Report</a>
+<a href="#">About</a>
+<a href="login.html" class="login-nav-btn">Login</a>
+</nav>
+</header>
+
+<main class="admin-container">
+
+<div class="breadcrumb">
+<a href="../index.html">Home</a>
+<span>/</span>
+<span>Admin Dashboard</span>
+</div>
+
+<section class="admin-header">
+<div>
+<span class="admin-label">ADMINISTRATOR / INVESTIGATOR</span>
+<h1>Admin Dashboard</h1>
+<p>Manage missing-person cases, review reports, verify sightings, and monitor system activity.</p>
+</div>
+<div class="system-status">
+<span class="status-dot"></span>
+<span>System Active</span>
+</div>
+</section>
+
+<section class="demo-notice">
+<div class="demo-icon">!</div>
+<div>
+<strong>Synthetic Prototype Data</strong>
+<p>The information shown on this dashboard is sample data created for the project prototype. It does not represent real missing-person cases.</p>
+</div>
+</section>
+
+<section class="stats-grid">
+
+<div class="stat-card">
+<div class="stat-icon">📁</div>
+<div>
+<span class="stat-label">Total Cases</span>
+<strong class="stat-number">12</strong>
+</div>
+</div>
+
+<div class="stat-card">
+<div class="stat-icon">⏳</div>
+<div>
+<span class="stat-label">Pending Verification</span>
+<strong class="stat-number">3</strong>
+</div>
+</div>
+
+<div class="stat-card">
+<div class="stat-icon">✓</div>
+<div>
+<span class="stat-label">Verified Cases</span>
+<strong class="stat-number">9</strong>
+</div>
+</div>
+
+<div class="stat-card">
+<div class="stat-icon">📍</div>
+<div>
+<span class="stat-label">Sightings</span>
+<strong class="stat-number">18</strong>
+</div>
+</div>
+
+</section>
+
+<section class="admin-section">
+
+<div class="section-heading">
+<div>
+<span class="section-label">REVIEW QUEUE</span>
+<h2>Pending Case Verification</h2>
+</div>
+<span class="count-badge">3 Pending</span>
+</div>
+
+<div class="review-list">
+
+<article class="review-card">
+<div class="review-info">
+<div class="review-photo">PHOTO</div>
+<div>
+<h3>Sample Case C</h3>
+<p>Age: 31</p>
+<p>Location: Abuja</p>
+<span class="pending-badge">Pending Verification</span>
+</div>
+</div>
+<div class="review-actions">
+<a href="case-details.html" class="btn-secondary">Review</a>
+<button type="button" class="btn-primary">Verify</button>
+</div>
+</article>
+
+<article class="review-card">
+<div class="review-info">
+<div class="review-photo">PHOTO</div>
+<div>
+<h3>Sample Case D</h3>
+<p>Age: 42</p>
+<p>Location: Enugu</p>
+<span class="pending-badge">Pending Verification</span>
+</div>
+</div>
+<div class="review-actions">
+<a href="case-details.html" class="btn-secondary">Review</a>
+<button type="button" class="btn-primary">Verify</button>
+</div>
+</article>
+
+<article class="review-card">
+<div class="review-info">
+<div class="review-photo">PHOTO</div>
+<div>
+<h3>Sample Case E</h3>
+<p>Age: 19</p>
+<p>Location: Benin City, Edo</p>
+<span class="pending-badge">Pending Verification</span>
+</div>
+</div>
+<div class="review-actions">
+<a href="case-details.html" class="btn-secondary">Review</a>
+<button type="button" class="btn-primary">Verify</button>
+</div>
+</article>
+
+</div>
+</section>
+
+<section class="admin-section">
+
+<div class="section-heading">
+<div>
+<span class="section-label">ACTIVITY</span>
+<h2>Recent Sightings</h2>
+</div>
+</div>
+
+<div class="sightings-list">
+
+<article class="sighting-card">
+<div class="sighting-main">
+<div class="location-icon">📍</div>
+<div>
+<h3>Sample Case A</h3>
+<p>Port Harcourt, Rivers State</p>
+<span>Reported recently</span>
+</div>
+</div>
+<span class="review-status">Pending Review</span>
+</article>
+
+<article class="sighting-card">
+<div class="sighting-main">
+<div class="location-icon">📍</div>
+<div>
+<h3>Sample Case B</h3>
+<p>Lagos State</p>
+<span>Reported recently</span>
+</div>
+</div>
+<span class="verified-status">Verified</span>
+</article>
+
+<article class="sighting-card">
+<div class="sighting-main">
+<div class="location-icon">📍</div>
+<div>
+<h3>Sample Case A</h3>
+<p>Port Harcourt, Rivers State</p>
+<span>Reported recently</span>
+</div>
+</div>
+<span class="review-status">Pending Review</span>
+</article>
+
+</div>
+</section>
+
+<section class="admin-section">
+
+<div class="section-heading">
+<div>
+<span class="section-label">MANAGEMENT</span>
+<h2>System Management</h2>
+</div>
+</div>
+
+<div class="management-grid">
+
+<a href="#" class="management-card">
+<div class="management-icon">👥</div>
+<div>
+<h3>User Management</h3>
+<p>Review registered users and manage account access.</p>
+</div>
+<span class="management-arrow">→</span>
+</a>
+
+<a href="#" class="management-card">
+<div class="management-icon">📋</div>
+<div>
+<h3>Case Management</h3>
+<p>Review, update, and manage missing-person cases.</p>
+</div>
+<span class="management-arrow">→</span>
+</a>
+
+<a href="#" class="management-card">
+<div class="management-icon">✦</div>
+<div>
+<h3>AI Analysis</h3>
+<p>Review search-priority results generated from verified clues.</p>
+</div>
+<span class="management-arrow">→</span>
+</a>
+
+</div>
+</section>
+
+<section class="admin-info-box">
+
+<div class="info-icon">i</div>
+
+<div>
+<h3>About Verification & AI Analysis</h3>
+<p>Submitted cases and sightings should be reviewed before being used by the system. The AI component supports search prioritization by analyzing available evidence and ranking candidate locations.</p>
+<p>The system does not provide an exact real-time location and does not replace authorized investigators or law enforcement.</p>
+</div>
+
+</section>
+
+</main>
+
+<footer class="footer">
+
+<div class="footer-content">
+
+<div>
+<h3>Find<span>&</span>Help</h3>
+<p>A prototype system for managing missing-person information and supporting search prioritization.</p>
+</div>
+
+<div class="footer-links">
+<a href="../index.html">Home</a>
+<a href="search.html">Search Cases</a>
+<a href="create-case.html">Report a Case</a>
+</div>
+
+</div>
+
+<div class="footer-bottom">
+<p>&copy; 2026 Find&Help. Prototype project.</p>
+</div>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Report a Missing Person | Find & Help</title>
+<link rel="stylesheet" href="../css/index.css">
+<link rel="stylesheet" href="../css/create-case.css">
+</head>
+<body>
+<header class="navbar">
+<div class="logo">
+<span class="logo-icon">+</span>
+<span>Find<span class="logo-highlight">&</span>Help</span>
+</div>
+<nav class="nav-links">
+<a href="../index.html">Home</a>
+<a href="search.html">Cases</a>
+<a href="create-case.html" class="active">Report</a>
+<a href="#">About</a>
+<a href="login.html" class="login-nav-btn">Login</a>
+<a href="register.html" class="register-nav-btn">Register</a>
+</nav>
+</header>
+<main class="create-case-page">
+<div class="create-case-container">
+<div class="breadcrumb">
+<a href="../index.html">Home</a>
+<span>/</span>
+<span>Report a Missing Person</span>
+</div>
+<section class="page-intro">
+<span class="intro-label">REPORT A MISSING PERSON</span>
+<h1>Help us find someone</h1>
+<p>Provide accurate information about the missing person. Your report will be reviewed before it becomes publicly visible.</p>
+</section>
+<section class="important-notice">
+<div class="notice-icon">!</div>
+<div>
+<strong>Important</strong>
+<p>Submitted cases are initially marked as <strong>Pending Verification</strong>. An administrator or investigator must review the information before the case becomes verified.</p>
+</div>
+</section>
+<form id="createCaseForm" class="case-form">
+<section class="form-section">
+<div class="section-number">1</div>
+<div class="form-section-content">
+<h2>Basic Information</h2>
+<p>Provide the basic details of the missing person.</p>
+<div class="form-row">
+<div class="form-group">
+<label for="firstName">First Name</label>
+<input type="text" id="firstName" name="firstName" placeholder="Enter first name" required>
+</div>
+<div class="form-group">
+<label for="lastName">Last Name</label>
+<input type="text" id="lastName" name="lastName" placeholder="Enter last name" required>
+</div>
+</div>
+<div class="form-row">
+<div class="form-group">
+<label for="age">Age</label>
+<input type="number" id="age" name="age" placeholder="Enter age" min="0" max="120" required>
+</div>
+<div class="form-group">
+<label for="gender">Gender</label>
+<select id="gender" name="gender" required>
+<option value="">Select gender</option>
+<option value="male">Male</option>
+<option value="female">Female</option>
+<option value="other">Other</option>
+</select>
+</div>
+</div>
+</div>
+</section>
+<section class="form-section">
+<div class="section-number">2</div>
+<div class="form-section-content">
+<h2>Recent Photograph</h2>
+<p>Upload a recent photograph of the missing person.</p>
+<div class="upload-box">
+<input type="file" id="photo" name="photo" accept="image/*" required>
+<label for="photo" class="upload-label">
+<div class="upload-icon">📷</div>
+<h3>Upload photograph</h3>
+<p>Choose a clear, recent photograph</p>
+<span class="upload-button">Choose Photo</span>
+<small id="file-name">JPG, PNG or WEBP • Max 5MB</small>
+</label>
+</div>
+</div>
+</section>
+<section class="form-section">
+<div class="section-number">3</div>
+<div class="form-section-content">
+<h2>Physical Description</h2>
+<p>Provide identifying physical characteristics.</p>
+<div class="form-row">
+<div class="form-group">
+<label for="height">Height</label>
+<input type="text" id="height" name="height" placeholder="e.g. 1.72 m">
+</div>
+</div>
+<div class="form-group">
+<label for="physicalDescription">Physical Description</label>
+<textarea id="physicalDescription" name="physicalDescription" rows="5" placeholder="Describe physical characteristics such as build, hair, distinguishing marks, or other useful details."></textarea>
+</div>
+</div>
+</section>
+<section class="form-section">
+<div class="section-number">4</div>
+<div class="form-section-content">
+<h2>Last-Known Information</h2>
+<p>Tell us where and when the person was last seen.</p>
+<div class="form-row">
+<div class="form-group">
+<label for="location">General Location</label>
+<input type="text" id="location" name="location" placeholder="e.g. Port Harcourt">
+</div>
+<div class="form-group">
+<label for="state">State</label>
+<select id="state" name="state">
+<option value="">Select state</option>
+<option value="abia">Abia</option>
+<option value="adamawa">Adamawa</option>
+<option value="akwa-ibom">Akwa Ibom</option>
+<option value="anambra">Anambra</option>
+<option value="bauchi">Bauchi</option>
+<option value="bayelsa">Bayelsa</option>
+<option value="benue">Benue</option>
+<option value="borno">Borno</option>
+<option value="cross-river">Cross River</option>
+<option value="delta">Delta</option>
+<option value="ebonyi">Ebonyi</option>
+<option value="edo">Edo</option>
+<option value="ekiti">Ekiti</option>
+<option value="enugu">Enugu</option>
+<option value="gombe">Gombe</option>
+<option value="imo">Imo</option>
+<option value="jigawa">Jigawa</option>
+<option value="kaduna">Kaduna</option>
+<option value="kano">Kano</option>
+<option value="katsina">Katsina</option>
+<option value="kebbi">Kebbi</option>
+<option value="kogi">Kogi</option>
+<option value="kwara">Kwara</option>
+<option value="lagos">Lagos</option>
+<option value="nasarawa">Nasarawa</option>
+<option value="niger">Niger</option>
+<option value="ogun">Ogun</option>
+<option value="ondo">Ondo</option>
+<option value="osun">Osun</option>
+<option value="oyo">Oyo</option>
+<option value="plateau">Plateau</option>
+<option value="rivers">Rivers</option>
+<option value="sokoto">Sokoto</option>
+<option value="taraba">Taraba</option>
+<option value="yobe">Yobe</option>
+<option value="zamfara">Zamfara</option>
+<option value="fct">FCT Abuja</option>
+</select>
+</div>
+</div>
+<div class="form-group">
+<label for="area">General Area</label>
+<input type="text" id="area" name="area" placeholder="e.g. near a market, bus stop, school, or public area">
+</div>
+<div class="form-row">
+<div class="form-group">
+<label for="lastSeenDate">Date Last Seen</label>
+<input type="date" id="lastSeenDate" name="lastSeenDate">
+</div>
+<div class="form-group">
+<label for="lastSeenTime">Approximate Time</label>
+<input type="time" id="lastSeenTime" name="lastSeenTime">
+</div>
+</div>
+</div>
+</section>
+<section class="form-section">
+<div class="section-number">5</div>
+<div class="form-section-content">
+<h2>Clothing and Additional Details</h2>
+<p>Provide any other information that could help with the search.</p>
+<div class="form-group">
+<label for="clothing">Clothing</label>
+<textarea id="clothing" name="clothing" rows="4" placeholder="Describe what the person was wearing when last seen."></textarea>
+</div>
+<div class="form-group">
+<label for="additionalDetails">Additional Details</label>
+<textarea id="additionalDetails" name="additionalDetails" rows="5" placeholder="Add any other relevant information."></textarea>
+</div>
+</div>
+</section>
+<section class="form-section">
+<div class="section-number">6</div>
+<div class="form-section-content">
+<h2>Reporter Information</h2>
+<p>Tell us about your relationship to the missing person.</p>
+<div class="form-group">
+<label for="relationship">Relationship to Missing Person</label>
+<select id="relationship" name="relationship">
+<option value="">Select relationship</option>
+<option value="parent">Parent</option>
+<option value="sibling">Sibling</option>
+<option value="relative">Other Relative</option>
+<option value="friend">Friend</option>
+<option value="guardian">Guardian</option>
+<option value="other">Other</option>
+</select>
+</div>
+<div class="privacy-box">
+<strong>Privacy Notice</strong>
+<p>Do not include private home addresses, passwords, financial information, or other unnecessary sensitive information in this report.</p>
+</div>
+</div>
+</section>
+<section class="verification-box">
+<div class="verification-icon">✓</div>
+<div>
+<h3>Verification Process</h3>
+<p>After submission, your case will be marked as <strong>Pending Verification</strong>. An administrator or authorized investigator will review the information before it becomes a verified public case.</p>
+</div>
+</section>
+<div class="form-actions">
+<a href="../index.html" class="cancel-btn">Cancel</a>
+<button type="submit" class="submit-btn">Submit Case for Review</button>
+</div>
+</form>
+</div>
+</main>
+<footer class="footer">
+<div class="footer-content">
+<div>
+<h3>Find<span>&</span>Help</h3>
+<p>A prototype system for managing missing-person information and supporting search prioritization.</p>
+</div>
+<div class="footer-links">
+<a href="../index.html">Home</a>
+<a href="search.html">Search Cases</a>
+<a href="create-case.html">Report a Case</a>
+</div>
+</div>
+<div class="footer-bottom">
+<p>&copy; 2026 Find&Help. Prototype project.</p>
+</div>
+</footer>
+</body>
+</html>

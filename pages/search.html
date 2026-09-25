@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Search Cases | Find & Help</title>
+
+
+    <link
+        rel="stylesheet"
+        href="../css/index.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/search.css"
+    >
+
+</head>
+
+
+<body>
+
+
+
+    <header class="navbar">
+
+        <a
+            href="../index.html"
+            class="logo"
+        >
+
+            <span class="logo-icon">+</span>
+
+            <span>
+                Find<span class="logo-highlight">&</span>Help
+            </span>
+
+        </a>
+
+
+        <nav class="nav-links">
+
+            <a href="../index.html">
+                Home
+            </a>
+
+            <a
+                href="search.html"
+                class="active"
+            >
+                Cases
+            </a>
+
+            <a href="create-case.html">
+                Report
+            </a>
+
+            <a href="#">
+                About
+            </a>
+
+        </nav>
+
+
+        <a
+            href="login.html"
+            class="login-btn"
+        >
+            Login
+        </a>
+
+    </header>
+
+    <main class="search-page">
+
+
+        <section class="search-intro">
+
+            <span class="page-label">
+                VERIFIED MISSING-PERSON CASES
+            </span>
+
+
+            <h1>
+                Search for a missing person
+            </h1>
+
+
+            <p>
+                Search verified missing-person cases using
+                the person's name, age, gender, location,
+                or case status.
+            </p>
+
+        </section>
+
+        <section
+            class="case-search"
+            aria-label="Search missing-person cases"
+        >
+
+            <form class="search-form">
+
+                <div class="search-input-wrapper">
+
+                    <span
+                        class="search-symbol"
+                        aria-hidden="true"
+                    >
+                        ⌕
+                    </span>
+
+
+                    <input
+                        type="search"
+                        id="caseSearch"
+                        name="search"
+                        placeholder="Search by name..."
+                        aria-label="Search by name"
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="search-submit"
+                >
+                    Search
+                </button>
+
+            </form>
+
+            <div class="filters">
+
+                <div class="filter-group">
+
+                    <label for="age">
+                        Age Range
+                    </label>
+
+                    <select
+                        id="age"
+                        name="age"
+                    >
+
+                        <option value="">
+                            All ages
+                        </option>
+
+                        <option value="0-12">
+                            0 - 12
+                        </option>
+
+                        <option value="13-17">
+                            13 - 17
+                        </option>
+
+                        <option value="18-25">
+                            18 - 25
+                        </option>
+
+                        <option value="26-40">
+                            26 - 40
+                        </option>
+
+                        <option value="41-60">
+                            41 - 60
+                        </option>
+
+                        <option value="61+">
+                            61+
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="filter-group">
+
+                    <label for="gender">
+                        Gender
+                    </label>
+
+                    <select
+                        id="gender"
+                        name="gender"
+                    >
+
+                        <option value="">
+                            All genders
+                        </option>
+
+                        <option value="male">
+                            Male
+                        </option>
+
+                        <option value="female">
+                            Female
+                        </option>
+
+                        <option value="other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="filter-group">
+
+                    <label for="location">
+                        Location
+                    </label>
+
+                    <select
+                        id="location"
+                        name="location"
+                    >
+
+                        <option value="">
+                            All locations
+                        </option>
+
+                        <option value="rivers">
+                            Rivers
+                        </option>
+
+                        <option value="lagos">
+                            Lagos
+                        </option>
+
+                        <option value="abuja">
+                            Abuja (FCT)
+                        </option>
+
+                        <option value="enugu">
+                            Enugu
+                        </option>
+
+                        <option value="edo">
+                            Edo
+                        </option>
+
+                        <option value="other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="filter-group">
+
+                    <label for="status">
+                        Case Status
+                    </label>
+
+                    <select
+                        id="status"
+                        name="status"
+                    >
+
+                        <option value="">
+                            All statuses
+                        </option>
+
+                        <option value="active">
+                            Active
+                        </option>
+
+                        <option value="investigation">
+                            Under Investigation
+                        </option>
+
+                        <option value="found">
+                            Person Found
+                        </option>
+
+                        <option value="closed">
+                            Closed
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="cases-section">
+
+
+            <div class="results-header">
+
+                <div>
+
+                    <span class="results-label">
+                        VERIFIED CASES
+                    </span>
+
+                    <h2>
+                        Missing-person cases
+                    </h2>
+
+                </div>
+
+
+                <span class="case-count">
+                    Demo data
+                </span>
+
+            </div>
+
+
+
+            <div class="demo-notice">
+
+                <span class="demo-icon">
+                    i
+                </span>
+
+                <div>
+
+                    <strong>
+                        Prototype demonstration data
+                    </strong>
+
+                    <p>
+                        The cases shown below are synthetic
+                        examples for this prototype and are
+                        not real missing-person cases.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="case-grid">
+
+                <article class="case-card">
+
+                    <div class="case-image">
+
+                        <div class="image-placeholder">
+                            ?
+                        </div>
+
+
+                        <span class="case-status">
+                            Verified
+                        </span>
+
+                    </div>
+
+
+                    <div class="case-content">
+
+                        <div class="synthetic-label">
+                            SYNTHETIC CASE
+                        </div>
+
+
+                        <h3>
+                            Sample Case A
+                        </h3>
+
+
+                        <div class="case-info">
+
+                            <p>
+                                <span>
+                                    Age
+                                </span>
+
+                                24 years
+                            </p>
+
+
+                            <p>
+                                <span>
+                                    Location
+                                </span>
+
+                                Port Harcourt, Rivers
+                            </p>
+
+
+                            <p>
+                                <span>
+                                    Status
+                                </span>
+
+                                Active
+                            </p>
+
+                        </div>
+
+
+                        <a
+                            href="case-details.html"
+                            class="view-case"
+                        >
+                            View Case
+
+                            <span>
+                                →
+                            </span>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <article class="case-card">
+
+                    <div class="case-image">
+
+                        <div class="image-placeholder">
+                            ?
+                        </div>
+
+
+                        <span class="case-status">
+                            Verified
+                        </span>
+
+                    </div>
+
+
+                    <div class="case-content">
+
+                        <div class="synthetic-label">
+                            SYNTHETIC CASE
+                        </div>
+
+
+                        <h3>
+                            Sample Case B
+                        </h3>
+
+
+                        <div class="case-info">
+
+                            <p>
+                                <span>
+                                    Age
+                                </span>
+
+                                17 years
+                            </p>
+
+
+                            <p>
+                                <span>
+                                    Location
+                                </span>
+
+                                Lagos, Lagos
+                            </p>
+
+
+                            <p>
+                                <span>
+                                    Status
+                                </span>
+
+                                Active
+                            </p>
+
+                        </div>
+
+
+                        <a
+                            href="case-details.html"
+                            class="view-case"
+                        >
+                            View Case
+
+                            <span>
+                                →
+                            </span>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <article class="case-card">
+
+                    <div class="case-image">
+
+                        <div class="image-placeholder">
+                            ?
+                        </div>
+
+
+                        <span class="case-status">
+                            Verified
+                        </span>
+
+                    </div>
+
+
+                    <div class="case-content">
+
+                        <div class="synthetic-label">
+                            SYNTHETIC CASE
+                        </div>
+
+
+                        <h3>
+                            Sample Case C
+                        </h3>
+
+
+                        <div class="case-info">
+
+                            <p>
+                                <span>
+                                    Age
+                                </span>
+
+                                31 years
+                            </p>
+
+
+                            <p>
+                                <span>
+                                    Location
+                                </span>
+
+                                Abuja, FCT
+                            </p>
+
+
+                            <p>
+                                <span>
+                                    Status
+                                </span>
+
+                                Under Investigation
+                            </p>
+
+                        </div>
+
+
+                        <a
+                            href="case-details.html"
+                            class="view-case"
+                        >
+                            View Case
+
+                            <span>
+                                →
+                            </span>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="case-card">
+
+                    <div class="case-image">
+
+                        <div class="image-placeholder">
+                            ?
+                        </div>
+
+
+                        <span class="case-status">
+                            Verified
+                        </span>
+
+                    </div>
+
+
+                    <div class="case-content">
+
+                        <div class="synthetic-label">
+                            SYNTHETIC CASE
+                        </div>
+
+
+                        <h3>
+                            Sample Case D
+                        </h3>
+
+
+                        <div class="case-info">
+
+                            <p>
+                                <span>
+                                    Age
+                                </span>
+
+                                42 years
+                            </p>
+
+
+                            <p>
+                                <span>
+                                    Location
+                                </span>
+
+                                Enugu, Enugu
+                            </p>
+
+
+                            <p>
+                                <span>
+                                    Status
+                                </span>
+
+                                Active
+                            </p>
+
+                        </div>
+
+
+                        <a
+                            href="case-details.html"
+                            class="view-case"
+                        >
+                            View Case
+
+                            <span>
+                                →
+                            </span>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <article class="case-card">
+
+                    <div class="case-image">
+
+                        <div class="image-placeholder">
+                            ?
+                        </div>
+
+
+                        <span class="case-status">
+                            Verified
+                        </span>
+
+                    </div>
+
+
+                    <div class="case-content">
+
+                        <div class="synthetic-label">
+                            SYNTHETIC CASE
+                        </div>
+
+
+                        <h3>
+                            Sample Case E
+                        </h3>
+
+
+                        <div class="case-info">
+
+                            <p>
+                                <span>
+                                    Age
+                                </span>
+
+                                19 years
+                            </p>
+
+
+                            <p>
+                                <span>
+                                    Location
+                                </span>
+
+                                Benin City, Edo
+                            </p>
+
+
+                            <p>
+                                <span>
+                                    Status
+                                </span>
+
+                                Active
+                            </p>
+
+                        </div>
+
+
+                        <a
+                            href="case-details.html"
+                            class="view-case"
+                        >
+                            View Case
+
+                            <span>
+                                →
+                            </span>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <article class="case-card">
+
+                    <div class="case-image">
+
+                        <div class="image-placeholder">
+                            ?
+                        </div>
+
+
+                        <span class="case-status">
+                            Verified
+                        </span>
+
+                    </div>
+
+
+                    <div class="case-content">
+
+                        <div class="synthetic-label">
+                            SYNTHETIC CASE
+                        </div>
+
+
+                        <h3>
+                            Sample Case F
+                        </h3>
+
+
+                        <div class="case-info">
+
+                            <p>
+                                <span>
+                                    Age
+                                </span>
+
+                                58 years
+                            </p>
+
+
+                            <p>
+                                <span>
+                                    Location
+                                </span>
+
+                                Port Harcourt, Rivers
+                            </p>
+
+
+                            <p>
+                                <span>
+                                    Status
+                                </span>
+
+                                Active
+                            </p>
+
+                        </div>
+
+
+                        <a
+                            href="case-details.html"
+                            class="view-case"
+                        >
+                            View Case
+
+                            <span>
+                                →
+                            </span>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-logo">
+
+            <span class="logo-icon">
+                +
+            </span>
+
+            Find<span>&</span>Help
+
+        </div>
+
+
+        <p>
+            Supporting communities in missing-person searches.
+        </p>
+
+
+        <div class="footer-links">
+
+            <a href="#">
+                Privacy
+            </a>
+
+            <a href="#">
+                About
+            </a>
+
+            <a href="#">
+                Contact
+            </a>
+
+        </div>
+
+
+        <div class="copyright">
+            © 2026 Find & Help. All rights reserved.
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

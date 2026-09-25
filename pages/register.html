@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Register | Find & Help</title>
+
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/register.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+ <header class="navbar">
+
+    <div class="logo">
+        <span class="logo-icon">+</span>
+        <span>Find<span class="logo-highlight">&</span>Help</span>
+    </div>
+
+    <nav class="nav-links">
+
+        <a href="../index.html">
+            Home
+        </a>
+
+        <a href="search.html">
+            Cases
+        </a>
+
+        <a href="create-case.html">
+            Report
+        </a>
+
+        <a href="#">
+            About
+        </a>
+
+        <a href="login.html" class="login-nav-btn">
+            Login
+        </a>
+
+        <a href="register.html" class="register-nav-btn">
+            Register
+        </a>
+
+    </nav>
+
+</header>
+
+    <!-- REGISTER PAGE -->
+
+    <main class="register-page">
+
+        <div class="register-container">
+
+
+            <!-- LEFT SIDE -->
+
+            <section class="register-intro">
+
+                <div class="welcome-badge">
+
+                    <span class="badge-dot"></span>
+
+                    JOIN FIND&amp;HELP
+
+                </div>
+
+
+                <h1>
+
+                    Create your
+
+                    <span>
+                        Find&amp;Help
+                    </span>
+
+                    account
+
+                </h1>
+
+
+                <p>
+
+                    Create an account to report missing-person
+                    cases, manage your submissions, and help
+                    share verified information with your community.
+
+                </p>
+
+
+                <div class="register-points">
+
+                    <div class="register-point">
+
+                        <span class="point-icon">✓</span>
+
+                        <div>
+                            <strong>Report cases</strong>
+
+                            <p>
+                                Submit missing-person information
+                                for review.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="register-point">
+
+                        <span class="point-icon">✓</span>
+
+                        <div>
+                            <strong>Manage your reports</strong>
+
+                            <p>
+                                Keep track of cases you have submitted.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="register-point">
+
+                        <span class="point-icon">✓</span>
+
+                        <div>
+                            <strong>Support your community</strong>
+
+                            <p>
+                                Share useful information through
+                                the reporting system.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- REGISTER CARD -->
+
+            <section class="register-card">
+
+                <div class="register-card-header">
+
+                    <h2>
+                        Create account
+                    </h2>
+
+                    <p>
+                        Enter your details to get started.
+                    </p>
+
+                </div>
+
+
+                <form id="registerForm">
+
+
+                    <!-- FIRST + LAST NAME -->
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="firstname">
+                                FIRST NAME
+                            </label>
+
+                            <input
+                                type="text"
+                                id="firstname"
+                                name="firstname"
+                                placeholder="First name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="lastname">
+                                LAST NAME
+                            </label>
+
+                            <input
+                                type="text"
+                                id="lastname"
+                                name="lastname"
+                                placeholder="Last name"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            EMAIL ADDRESS
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- PASSWORD -->
+
+                    <div class="form-group">
+
+                        <label for="password">
+                            PASSWORD
+                        </label>
+
+                        <div class="password-wrapper">
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Create a password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                id="passwordToggle"
+                                class="password-toggle"
+                            >
+                                Show
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CONFIRM PASSWORD -->
+
+                    <div class="form-group">
+
+                        <label for="confirmPassword">
+                            CONFIRM PASSWORD
+                        </label>
+
+                        <div class="password-wrapper">
+
+                            <input
+                                type="password"
+                                id="confirmPassword"
+                                name="confirmPassword"
+                                placeholder="Confirm your password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                id="confirmPasswordToggle"
+                                class="password-toggle"
+                            >
+                                Show
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- TERMS -->
+
+                    <label class="terms">
+
+                        <input
+                            type="checkbox"
+                            id="terms"
+                            required
+                        >
+
+                        <span>
+                            I understand that submitted case information
+                            may require verification before becoming public.
+                        </span>
+
+                    </label>
+
+
+                    <!-- SUBMIT -->
+
+                    <button
+                        type="submit"
+                        class="register-submit"
+                    >
+
+                        Create Account
+
+                        <span>→</span>
+
+                    </button>
+
+
+                </form>
+
+
+                <!-- LOGIN LINK -->
+
+                <div class="login-link">
+
+                    Already have an account?
+
+                    <a href="login.html">
+                        Login
+                    </a>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <script src="../js/register.js"></script>
+
+</body>
+
+</html>

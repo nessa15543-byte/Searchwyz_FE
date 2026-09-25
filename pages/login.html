@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Find & Help</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">
+                <span class="logo-icon">+</span>
+                <span>
+                    Find<span class="logo-and">&</span>Help
+                </span>
+            </a>
+            <nav class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="search.html">Cases</a>
+                <a href="create-case.html">Report</a>
+                <a href="#">About</a>
+                <a href="login.html" class="login-nav-btn">Login</a>
+            </nav>
+        </div>
+    </header>
+    <main class="login-page">
+        <div class="login-container">
+            <section class="login-intro">
+                <div class="welcome-badge">
+                    <span class="badge-dot"></span>WELCOME BACk
+
+                </div>
+                <h1>Log in to<span>Find&amp;Help</span></h1>
+                <p> Access your account, manage your reports, and stay connected with your community.
+                </p>
+
+                <!-- Illustration -->
+                <div class="login-illustration">
+
+
+                    <div class="plant">
+
+                        <div class="plant-stem"></div>
+
+                        <div class="leaf leaf-one"></div>
+
+                        <div class="leaf leaf-two"></div>
+
+                        <div class="leaf leaf-three"></div>
+
+                        <div class="plant-pot"></div>
+
+                    </div>
+
+
+                    <!-- Laptop -->
+
+                    <div class="laptop">
+
+                        <div class="laptop-screen">
+
+                            <div class="profile-circle">
+
+                                <span class="person-head"></span>
+
+                                <span class="person-body"></span>
+
+                            </div>
+
+
+                            <div class="profile-line line-one"></div>
+
+                            <div class="profile-line line-two"></div>
+
+                        </div>
+
+
+                        <div class="laptop-base"></div>
+
+                    </div>
+
+
+                    <!-- Notification -->
+
+                    <div class="notification-card">
+
+                        <div class="notification-check">
+                            ✓
+                        </div>
+
+                        <div class="notification-lines">
+
+                            <span></span>
+
+                            <span></span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =========================
+                 RIGHT SIDE LOGIN FORM
+            ========================== -->
+
+            <section class="login-card">
+
+
+                <div class="login-card-header">
+
+                    <h2>
+                        Login
+                    </h2>
+
+                    <p>
+                        Welcome back! Please enter your details
+                        to continue.
+                    </p>
+
+                </div>
+
+
+
+                <form id="loginForm" onsubmit="credential()">
+
+                    <!-- Email -->
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            EMAIL ADDRESS
+                        </label>
+
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">
+
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+
+                                    <path d="M3 7l9 6 9-6"></path>
+
+                                </svg>
+
+                            </span>
+
+
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="password">
+                            PASSWORD
+                        </label>
+
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">
+
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+
+                                    <rect x="5" y="10" width="14" height="10" rx="2"></rect>
+
+                                    <path d="M8 10V7a4 4 0 0 1 8 0v3"></path>
+
+                                </svg>
+
+                            </span>
+
+
+                            <input type="password" id="password" name="password" placeholder="Enter your password"
+                                required>
+
+
+                            <button type="button" class="password-toggle" id="passwordToggle"
+                                aria-label="Show password">
+
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+
+                                    <path d="M2 12s3.5-6 10-6
+                                        10 6 10 6-3.5 6-10 6
+                                        -10-6-10-6z"></path>
+
+                                    <circle cx="12" cy="12" r="3"></circle>
+
+                                </svg>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="login-options">
+
+
+                        <label class="remember-me">
+
+                            <input type="checkbox" id="rememberMe">
+
+                            <span class="custom-checkbox">
+                                ✓
+                            </span>
+
+                            <span>
+                                Remember me
+                            </span>
+
+                        </label>
+
+
+                        <a href="#" class="forgot-password">
+                            Forgot password?
+                        </a>
+
+                    </div>
+
+                    <button type="submit" class="login-submit">
+
+                        <span>
+                            Login
+                        </span>
+
+                        <span class="arrow">
+                            →
+                        </span>
+
+                    </button>
+
+
+                </form>
+
+                <div class="login-divider"></div>
+
+                <p class="signup-text">
+                    Don't have an account?
+                    <a href="register.html">
+                        Sign up
+                    </a>
+                </p>
+            </section>
+        </div>
+    </main>
+    <script>
+        async function credential() {
+
+            try {
+                const email = document.getElementById('email')
+                const password = document.getElementById('password')
+
+                if (!email || email == null) throw new Error("Email is required")
+                if (!email.includes("@")) throw new Error("Invalid email")
+                if (!password || password == null) throw new Error("Password is required ")
+                if (!password.length > 5) throw new Error('Password should be at least 6 characters')
+                if (!password.length < 20) throw new Error('Password must not exceed 20 characters')
+
+                console.log(email, password)
+
+                const data = {
+                    email,
+                    password
+                }
+                console.log(data)
+                const result = await Login(data)
+                if (!result) {
+                    throw new Error("Login wasn't successful");
+                }
+
+                location.href ="./reporter-dashboard.html"
+            } catch (error) {
+                res.status(400).json({ error: eror.message || "An error occured" })
+            }
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Submit Sighting | Find & Help</title>
+
+    <link rel="stylesheet" href="../css/index.css">
+
+    <link rel="stylesheet" href="../css/submit-sighting.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="../index.html" class="logo">
+                Find<span>&</span>Help
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <a href="search.html">
+                    Cases
+                </a>
+
+                <a href="create-case.html">
+                    Report Missing Person
+                </a>
+
+                <a href="#">
+                    About
+                </a>
+
+                <a href="login.html" class="nav-login">
+                    Login
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+    <main class="sighting-page">
+
+        <div class="sighting-container">
+            <div class="breadcrumb">
+
+                <a href="search.html">
+                    ← Back to Search
+                </a>
+
+                <span>/</span>
+
+                <span>
+                    Submit Sighting
+                </span>
+
+            </div>
+            <section class="page-intro">
+
+                <span class="section-label">
+                    SHARE INFORMATION
+                </span>
+
+                <h1>
+                    Submit a Sighting
+                </h1>
+
+                <p>
+                    If you believe you have seen this missing person,
+                    provide the information below. Your submission will
+                    be reviewed before it is used in the case.
+                </p>
+
+            </section>
+            <div class="demo-notice">
+
+                <div class="notice-icon">
+                    !
+                </div>
+
+                <div>
+
+                    <strong>
+                        Prototype / Synthetic Data
+                    </strong>
+
+                    <p>
+                        This page currently uses a synthetic prototype
+                        case for demonstration. Do not submit real
+                        personal information while testing the prototype.
+                    </p>
+
+                </div>
+
+            </div>
+            <section class="case-summary">
+
+                <div class="case-summary-content">
+
+                    <span class="case-label">
+                        SIGHTING FOR CASE
+                    </span>
+
+                    <h2>
+                        Sample Case A
+                    </h2>
+
+                    <p>
+                        Missing person last known to be in
+                        Port Harcourt, Rivers State.
+                    </p>
+
+                </div>
+
+                <span class="case-status">
+                    Active
+                </span>
+
+            </section>
+            <form
+                class="sighting-form"
+                action="#"
+                method="POST"
+                enctype="multipart/form-data"
+            >
+
+                <section class="form-section">
+
+                    <div class="form-section-heading">
+
+                        <span class="step-number">
+                            1
+                        </span>
+
+                        <div>
+
+                            <h2>
+                                Where did you see the person?
+                            </h2>
+
+                            <p>
+                                Provide the general location where
+                                the sighting occurred.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="location">
+                            Sighting Location
+                            <span class="required">*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="location"
+                            name="location"
+                            placeholder="e.g. Port Harcourt, Rivers State"
+                            required
+                        >
+
+                        <small>
+                            Use a general location. Do not provide
+                            a private home address.
+                        </small>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="state">
+                                State
+                                <span class="required">*</span>
+                            </label>
+
+                            <select
+                                id="state"
+                                name="state"
+                                required
+                            >
+
+                                <option value="">
+                                    Select state
+                                </option>
+
+                                <option value="rivers">
+                                    Rivers
+                                </option>
+
+                                <option value="lagos">
+                                    Lagos
+                                </option>
+
+                                <option value="fct">
+                                    Abuja (FCT)
+                                </option>
+
+                                <option value="enugu">
+                                    Enugu
+                                </option>
+
+                                <option value="edo">
+                                    Edo
+                                </option>
+
+                                <option value="other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="area">
+                                General Area
+                            </label>
+
+                            <input
+                                type="text"
+                                id="area"
+                                name="area"
+                                placeholder="e.g. GRA, Mile 1, Rumuola"
+                            >
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section class="form-section">
+
+                    <div class="form-section-heading">
+
+                        <span class="step-number">
+                            2
+                        </span>
+
+                        <div>
+
+                            <h2>
+                                When did you see the person?
+                            </h2>
+
+                            <p>
+                                The date and time help the system
+                                understand how recent the sighting is.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="sighting-date">
+                                Date
+                                <span class="required">*</span>
+                            </label>
+
+                            <input
+                                type="date"
+                                id="sighting-date"
+                                name="sightingDate"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="sighting-time">
+                                Approximate Time
+                                <span class="required">*</span>
+                            </label>
+
+                            <input
+                                type="time"
+                                id="sighting-time"
+                                name="sightingTime"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="time-accuracy">
+                            How certain are you about the time?
+                        </label>
+
+                        <select
+                            id="time-accuracy"
+                            name="timeAccuracy"
+                        >
+
+                            <option value="">
+                                Select an option
+                            </option>
+
+                            <option value="exact">
+                                I know the exact time
+                            </option>
+
+                            <option value="approximate">
+                                The time is approximate
+                            </option>
+
+                            <option value="uncertain">
+                                I am not sure
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </section>
+                <section class="form-section">
+
+                    <div class="form-section-heading">
+
+                        <span class="step-number">
+                            3
+                        </span>
+
+                        <div>
+
+                            <h2>
+                                What did you observe?
+                            </h2>
+
+                            <p>
+                                Describe what you saw as clearly
+                                and accurately as possible.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="description">
+                            Sighting Description
+                            <span class="required">*</span>
+                        </label>
+
+                        <textarea
+                            id="description"
+                            name="description"
+                            rows="7"
+                            placeholder="Describe what you observed, including clothing, direction of movement, surroundings, or other useful details."
+                            required
+                        ></textarea>
+
+                        <small>
+                            Only provide information you personally
+                            observed or information you can identify
+                            as coming from another source.
+                        </small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="direction">
+                            Direction of Movement
+                        </label>
+
+                        <select
+                            id="direction"
+                            name="direction"
+                        >
+
+                            <option value="">
+                                Select if known
+                            </option>
+
+                            <option value="north">
+                                North
+                            </option>
+
+                            <option value="south">
+                                South
+                            </option>
+
+                            <option value="east">
+                                East
+                            </option>
+
+                            <option value="west">
+                                West
+                            </option>
+
+                            <option value="unknown">
+                                Unknown
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </section>
+
+                <section class="form-section">
+
+                    <div class="form-section-heading">
+
+                        <span class="step-number">
+                            4
+                        </span>
+
+                        <div>
+
+                            <h2>
+                                Add a Photo
+                            </h2>
+
+                            <p>
+                                You may provide a photo related to
+                                the sighting if one is available.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+              <div class="upload-box">
+<input type="file" id="photo" name="photo" accept="image/*" required>
+<label for="photo" class="upload-label">
+<div class="upload-icon">📷</div>
+<h3>Upload photograph</h3>
+<p>Choose a clear, recent photograph</p>
+<span class="upload-button">Choose Photo</span>
+<small id="file-name">JPG, PNG or WEBP • Max 5MB</small>
+</label>
+</div>
+</div>
+
+                </section>
+
+                <section class="form-section">
+
+                    <div class="form-section-heading">
+
+                        <span class="step-number">
+                            5
+                        </span>
+
+                        <div>
+
+                            <h2>
+                                Contact Information
+                            </h2>
+
+                            <p>
+                                You may provide contact information
+                                if you are willing to be contacted
+                                about the sighting.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="contact-name">
+                                Your Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="contact-name"
+                                name="contactName"
+                                placeholder="Optional"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="contact-email">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="contact-email"
+                                name="contactEmail"
+                                placeholder="Optional"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="contact-phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="contact-phone"
+                            name="contactPhone"
+                            placeholder="Optional"
+                        >
+
+                    </div>
+
+                </section>
+
+
+                <div class="privacy-notice">
+
+                    <div class="privacy-icon">
+                        🔒
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Privacy & Safety
+                        </h3>
+
+                        <p>
+                            Do not submit passwords, private home
+                            addresses, financial information, or
+                            other sensitive personal information.
+                            Only provide information relevant to
+                            the sighting.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="verification-notice">
+
+                    <div class="verification-icon">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            What happens after submission?
+                        </h3>
+
+                        <p>
+                            Your sighting will initially be marked
+                            as <strong>Pending Verification</strong>.
+                            An authorized reviewer can examine the
+                            information before it is considered in
+                            the case analysis.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="form-actions">
+
+                    <a
+                        href="case-details.html"
+                        class="cancel-button"
+                    >
+                        Cancel
+                    </a>
+
+                    <button
+                        type="submit"
+                        class="submit-button"
+                    >
+                        Submit Sighting
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <a href="../index.html" class="logo">
+                    Find<span>&</span>Help
+                </a>
+
+                <p>
+                    A decision-support platform for organizing
+                    missing-person information and community sightings.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <a href="search.html">
+                    Search Cases
+                </a>
+
+                <a href="create-case.html">
+                    Report a Missing Person
+                </a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>
+                    Important
+                </h3>
+
+                <a href="#">
+                    Privacy
+                </a>
+
+                <a href="#">
+                    Terms
+                </a>
+
+                <a href="#">
+                    Safety
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Find & Help. Prototype for educational purposes.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

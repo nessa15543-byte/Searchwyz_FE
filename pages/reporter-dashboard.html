@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Reporter Dashboard | Find & Help</title>
+
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/reporter-dashboard.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            <span class="logo-icon">+</span>
+            <span>Find<span class="logo-highlight">&</span>Help</span>
+        </div>
+
+        <nav class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="pages/search.html">Cases</a>
+            <a href="pages/create-case.html">Report</a>
+            <a href="#">About</a>
+        </nav>
+
+        <a href="pages/login.html" class="login-btn">
+            Login
+        </a>
+
+    </header>
+
+
+    <main class="dashboard-page">
+
+        <div class="dashboard-container">
+
+
+            <div class="breadcrumb">
+
+                <a href="../index.html">Home</a>
+
+                <span>/</span>
+
+                <span>Reporter Dashboard</span>
+
+            </div>
+
+
+            <section class="dashboard-intro">
+
+                <div>
+
+                    <span class="section-label">
+                        REGISTERED REPORTER
+                    </span>
+
+                    <h1>
+                        Reporter Dashboard
+                    </h1>
+
+                    <p>
+                        Manage the missing-person cases you have submitted
+                        and check their verification status.
+                    </p>
+
+                </div>
+
+                <a
+                    href="create-case.html"
+                    class="primary-btn"
+                >
+                    + Report Missing Person
+                </a>
+
+            </section>
+
+
+            <div class="demo-notice">
+
+                <div class="notice-icon">
+                    !
+                </div>
+
+                <div>
+
+                    <strong>
+                        Prototype / Demo Data
+                    </strong>
+
+                    <p>
+                        The information shown on this dashboard is
+                        synthetic data for the frontend prototype.
+                        It does not represent real missing-person cases.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <section class="summary-grid">
+
+
+                <div class="summary-card">
+
+                    <div class="summary-icon">
+                        3
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Total Cases
+                        </span>
+
+                        <strong>
+                            3
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                    <div class="summary-icon pending">
+                        1
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Pending Verification
+                        </span>
+
+                        <strong>
+                            1
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                    <div class="summary-icon active">
+                        2
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Active Cases
+                        </span>
+
+                        <strong>
+                            2
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                    <div class="summary-icon sightings">
+                        4
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Sightings Received
+                        </span>
+
+                        <strong>
+                            4
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section class="cases-section">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="section-label">
+                            CASE MANAGEMENT
+                        </span>
+
+                        <h2>
+                            My Submitted Cases
+                        </h2>
+
+                    </div>
+
+                    <span class="case-count">
+                        3 Cases
+                    </span>
+
+                </div>
+
+
+                <article class="reporter-case-card">
+
+                    <div class="case-image">
+
+                        <div class="image-placeholder">
+                            PHOTO
+                        </div>
+
+                    </div>
+
+
+                    <div class="case-content">
+
+                        <div class="case-top">
+
+                            <div>
+
+                                <span class="case-id">
+                                    CASE #SYN-001
+                                </span>
+
+                                <h3>
+                                    Sample Case A
+                                </h3>
+
+                            </div>
+
+                            <span class="status-badge active">
+                                Active
+                            </span>
+
+                        </div>
+
+
+                        <div class="case-details">
+
+                            <div>
+                                <span>Age</span>
+                                <strong>24 years</strong>
+                            </div>
+
+                            <div>
+                                <span>Last Known Location</span>
+                                <strong>
+                                    Port Harcourt, Rivers
+                                </strong>
+                            </div>
+
+                            <div>
+                                <span>Date Last Seen</span>
+                                <strong>
+                                    12 September 2026
+                                </strong>
+                            </div>
+
+                        </div>
+
+
+                        <div class="case-footer">
+
+                            <div class="verification">
+
+                                <span>
+                                    Verification
+                                </span>
+
+                                <strong class="verified">
+                                    Verified
+                                </strong>
+
+                            </div>
+
+                            <div class="sighting-info">
+
+                                <span>
+                                    Sightings
+                                </span>
+
+                                <strong>
+                                    2</strong>
+                            </div>
+                            <a href="case-details.html" class="view-btn">View Case →</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="reporter-case-card">
+                    <div class="case-image">
+                        <div class="image-placeholder">
+                            PHOTO
+                        </div>
+                    </div>
+                    <div class="case-content">
+                        <div class="case-top">
+                            <div>
+                                <span class="case-id">CASE #SYN-002</span>
+                                <h3>Sample Case B</h3>
+                            </div>
+                            <span class="status-badge active">Active</span>
+                        </div>
+                        <div class="case-details">
+
+                            <div>
+                                <span>Age</span>
+                                <strong>17 years</strong>
+                            </div>
+
+                            <div>
+                                <span>Last Known Location</span>
+                                <strong>
+                                    Lagos, Lagos State
+                                </strong>
+                            </div>
+
+                            <div>
+                                <span>Date Last Seen</span>
+                                <strong>
+                                    14 September 2026
+                                </strong>
+                            </div>
+                        </div>
+                        <div class="case-footer">
+                            <div class="verification">
+                                <span> Verification </span>
+                                <strong class="verified">Verified</strong>
+                            </div>
+                            <div class="sighting-info">
+                                <span>Sightings</span>
+                                <strong>2</strong>
+                            </div>
+                            <a href="case-details.html" class="view-btn"> View Case →</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="reporter-case-card pending-card">
+                    <div class="case-image">
+                        <div class="image-placeholder">
+                            PHOTO
+                        </div>
+                    </div>
+                    <div class="case-content">
+                        <div class="case-top">
+                            <div>
+                                <span class="case-id">CASE #SYN-003</span>
+                                <h3>Sample Case C</h3>
+                            </div>
+                            <span class="status-badge pending">Pending Verification</span>
+                    </div>
+                        <div class="case-details">
+                            <div>
+                                <span>Age</span>
+                                <strong>31 years</strong>
+                            </div>
+                            <div>
+                                <span>Last Known Location</span>
+                                <strong>
+                                    Abuja, FCT
+                                </strong>
+                            </div>
+                            <div>
+                                <span>Date Last Seen</span>
+                                <strong>
+                                    16 September 2026
+                                </strong>
+                            </div>
+                        </div>
+                        <div class="case-footer">
+                            <div class="verification">
+                                <span>
+                                    Verification
+                                </span>
+                                <strong class="waiting">
+                                    Awaiting Review
+                                </strong>
+                            </div>
+                            <div class="sighting-info">
+                                <span> Sightings</span>
+                                <strong>  0</strong>
+                            </div>
+                            <a href="create-case.html" class="view-btn" >  View Submission → </a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="dashboard-info">
+                <div class="info-card">
+                    <div class="info-icon">
+                        i
+                    </div>
+                    <div>
+                        <h3>About case verification</h3>
+                        <p>
+                            Cases submitted through this system are
+                            initially marked as pending verification.
+                            An administrator or authorized investigator
+                            reviews the information before the case
+                            becomes publicly visible.
+                        </p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">
+                        !
+                    </div>
+                    <div>
+                        <h3> Keep case information updated</h3>
+                        <p>
+                            If new information becomes available,
+                            authorized users should update the case
+                            through the appropriate verification and
+                            case-management process.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div>
+             <h3>Find<span>&</span>Help</h3>
+                <p>
+                    A prototype system designed to support
+                    missing-person information management and
+                    search prioritization.
+                </p>
+            </div>
+            <div>
+                <h4> Quick Links</h4>
+                <a href="../index.html">Home</a>
+                <a href="search.html">Search Cases</a>
+                <a href="create-case.html">Report Missing Person</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                © 2026 Find & Help — Frontend Prototype
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
