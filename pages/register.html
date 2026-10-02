@@ -42,7 +42,7 @@
             Report
         </a>
 
-        <a href="#">
+        <a href="about.html">
             About
         </a>
 
@@ -170,7 +170,7 @@
                 </div>
 
 
-                <form id="registerForm">
+                <form id="registerForm" onsubmit="ValidateInfor()">
 
 
                     <!-- FIRST + LAST NAME -->
@@ -332,13 +332,7 @@
                 <!-- LOGIN LINK -->
 
                 <div class="login-link">
-
-                    Already have an account?
-
-                    <a href="login.html">
-                        Login
-                    </a>
-
+                    Already have an account?<a href="login.html"> Login</a>
                 </div>
 
             </section>
@@ -348,7 +342,87 @@
     </main>
 
 
-    <script src="../js/register.js"></script>
+    <script>
+        // Toggle password visibility
+        const passwordToggle = document.getElementById('passwordToggle');
+        const passwordInput = document.getElementById('password');
+        if (passwordToggle && passwordInput) {
+            passwordToggle.addEventListener('click', function () {
+                const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+                passwordInput.setAttribute('type', type);
+            });
+        }
+
+        const confirmPasswordToggle = document.getElementById('confirmPasswordToggle');
+        const confirmPasswordInput = document.getElementById('confirmPassword');
+        if (confirmPasswordToggle && confirmPasswordInput) {
+            confirmPasswordToggle.addEventListener('click', function () {
+                const type = confirmPasswordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+                confirmPasswordInput.setAttribute('type', type);
+            });
+        }
+
+        async function validateAndRegister(event) {
+            if (event) event.preventDefault();
+
+            try {
+                const firstName = document.getElementById('firstname').value.trim();
+                const lastName = document.getElementById('lastname').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const password = document.getElementById('password').value;
+                const confirmPassword = document.getElementById('confirmPassword').value;
+                const phone = document.getElementById('phone') ? document.getElementById('phone').value.trim() : '';
+                const location = document.getElementById('location') ? document.getElementById('location').value.trim() : '';
+                const terms = document.getElementById('terms');
+
+                if (!firstName || !lastName || !email || !password || !confirmPassword) {
+                    alert('All required fields must be filled');
+                    return;
+                }
+                if (!email.includes('@')) {
+                    alert('Invalid email address');
+                    return;
+                }
+                if (password.length < 6) {
+                    alert('Password should be at least 6 characters');
+                    return;
+                }
+                if (password !== confirmPassword) {
+                    alert('Passwords do not match');
+                    return;
+                }
+                if (terms && !terms.checked) {
+                    alert('You must agree to the Terms & Conditions');
+                    return;
+                }
+
+                const data = {
+                    firstName,
+                    lastName,
+                    email,
+                    password,
+                    phone,
+                    location
+                };
+
+                const result = await register(data)
+                if (!result){
+                    alert (result.error)
+                }
+
+                alert('Account created successfully!');
+                window.location.href = './login.html';
+            } catch (error) {
+                console.error('Error validating form:', error);
+                alert('An error occurred while creating your account');
+            }
+        }
+
+        const registerForm = document.getElementById('registerForm');
+        if (registerForm) {
+            registerForm.addEventListener('submit', validateAndRegister);
+        }
+    </script>
 
 </body>
 
