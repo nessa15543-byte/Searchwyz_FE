@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Find & Help</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <style>
+        .about-page {
+            padding: 60px 7% 80px;
+            background: linear-gradient(135deg, #f5fcff 0%, #ffffff 55%, #f5fbff 100%);
+            min-height: calc(100vh - 78px - 250px);
+        }
+        .about-hero {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 60px;
+        }
+        .about-hero span {
+            color: var(--primary);
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+        }
+        .about-hero h1 {
+            margin: 12px 0 20px;
+            font-size: clamp(36px, 5vw, 56px);
+            letter-spacing: -1.5px;
+            color: var(--dark);
+        }
+        .about-hero p {
+            color: var(--text);
+            font-size: 18px;
+            line-height: 1.8;
+        }
+        .about-grid {
+            max-width: 1100px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .about-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 40px rgba(20, 33, 61, 0.06);
+        }
+        .about-card h3 {
+            color: var(--dark);
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+        .about-card p {
+            color: var(--text);
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+        .about-card ul {
+            color: var(--text);
+            line-height: 1.9;
+            padding-left: 20px;
+        }
+        .about-card li {
+            margin-bottom: 8px;
+        }
+        .mission-card {
+            background: linear-gradient(145deg, #f0f7ff 0%, #ffffff 100%);
+            border-color: #c9dce9;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <a href="../index.html" class="logo">
+            <span class="logo-icon">+</span>
+            <span>Find<span class="logo-highlight">&</span>Help</span>
+        </a>
+        <nav class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="search.html">Cases</a>
+            <a href="create-case.html">Report</a>
+            <a href="about.html" class="active">About</a>
+            <a href="login.html" class="nav-login login-btn">Login</a>
+            <a href="register.html" class="nav-register">Register</a>
+        </nav>
+    </header>
+    <main class="about-page">
+        <section class="about-hero">
+            <span>ABOUT FIND & HELP</span>
+            <h1>Bringing communities together to help find missing persons</h1>
+            <p>Find & Help is a platform designed to connect communities, families, and concerned citizens in the search for missing persons. Every piece of information shared can help bring someone home safely.</p>
+        </section>
+        <section class="about-grid">
+            <div class="about-card mission-card">
+                <h3>Our Mission</h3>
+                <p>Our mission is to provide a centralized, accessible platform where missing persons cases can be reported, tracked, and shared with the community to support search efforts and reunite families.</p>
+            </div>
+            <div class="about-card">
+                <h3>How We Help</h3>
+                <ul>
+                    <li>Provide a simple way to report missing persons cases</li>
+                    <li>Allow community members to submit verified sightings</li>
+                    <li>Organize case information in one accessible location</li>
+                    <li>Help prioritize and coordinate search efforts</li>
+                </ul>
+            </div>
+            <div class="about-card">
+                <h3>Community-Driven</h3>
+                <p>We believe that timely information saves lives. By empowering communities to share credible information, we help create a network of support for families searching for their loved ones.</p>
+            </div>
+            <div class="about-card">
+                <h3>Our Values</h3>
+                <ul>
+                    <li><strong>Compassion:</strong> We prioritize the dignity and wellbeing of families</li>
+                    <li><strong>Accuracy:</strong> We emphasize verified information</li>
+                    <li><strong>Accessibility:</strong> Simple tools for everyone</li>
+                    <li><strong>Privacy:</strong> Respecting sensitive information</li>
+                </ul>
+            </div>
+            <div class="about-card">
+                <h3>Get Involved</h3>
+                <p>If you have information about any missing person, please submit a sighting or report a case. Every detail, no matter how small, could make a difference.</p>
+                <p>Learn more about our <a href="privacy.html" style="color: var(--primary); text-decoration: none; font-weight: 600;">Privacy Policy</a>.</p>
+            </div>
+            <div class="about-card">
+                <h3>Contact</h3>
+                <p>For questions, feedback, or support, please reach out through our contact channels. We're committed to continuously improving this platform to better serve communities.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-logo">
+            <span class="logo-icon">+</span>
+            Find<span>&</span>Help
+        </div>
+        <p>Supporting communities in missing-person searches.</p>
+        <div class="footer-links">
+            <a href="privacy.html">Privacy</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="copyright">
+            © 2026 Find & Help. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>

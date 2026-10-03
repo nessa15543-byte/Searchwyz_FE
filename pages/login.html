@@ -22,7 +22,7 @@
                 <a href="../index.html">Home</a>
                 <a href="search.html">Cases</a>
                 <a href="create-case.html">Report</a>
-                <a href="#">About</a>
+                <a href="about.html">About</a>
                 <a href="login.html" class="login-nav-btn">Login</a>
             </nav>
         </div>
@@ -130,7 +130,7 @@
 
 
 
-                <form id="loginForm" onsubmit="credential()">
+                <form id="loginForm" onsubmit="credential(event)">
 
                     <!-- Email -->
 
@@ -189,7 +189,7 @@
 
 
                             <button type="button" class="password-toggle" id="passwordToggle"
-                                aria-label="Show password">
+                                aria-label="Show password" onclick="togglePassword()">
 
                                 <svg viewBox="0 0 24 24" aria-hidden="true">
 
@@ -225,7 +225,7 @@
                         </label>
 
 
-                        <a href="#" class="forgot-password">
+                        <a href="forgot-password.html" class="forgot-password">
                             Forgot password?
                         </a>
 
@@ -258,37 +258,56 @@
         </div>
     </main>
     <script>
-        async function credential() {
-
+        async function credential(event) {
+            if (event) event.preventDefault();
             try {
-                const email = document.getElementById('email')
-                const password = document.getElementById('password')
+                const emailInput = document.getElementById('email');
+                const passwordInputElem = document.getElementById('password');
 
-                if (!email || email == null) throw new Error("Email is required")
-                if (!email.includes("@")) throw new Error("Invalid email")
-                if (!password || password == null) throw new Error("Password is required ")
-                if (!password.length > 5) throw new Error('Password should be at least 6 characters')
-                if (!password.length < 20) throw new Error('Password must not exceed 20 characters')
+                const email = emailInput ? emailInput.value.trim() : '';
+                const password = passwordInputElem ? passwordInputElem.value : '';
 
-                console.log(email, password)
+                if (!email) {
+                    alert('Email is required');
+                    return;
+                }
+                if (!email.includes('@')) {
+                    alert('Invalid email');
+                    return;
+                }
+                if (!password) {
+                    alert('Password is required');
+                    return;
+                }
+                if (password.length < 6) {
+                    alert('Password should be at least 6 characters');
+                    return;
+                }
+                if (password.length > 20) {
+                    alert('Password must not exceed 20 characters');
+                    return;
+                }
 
                 const data = {
-                    email,
-                    password
-                }
-                console.log(data)
-                const result = await Login(data)
-                if (!result) {
-                    throw new Error("Login wasn't successful");
-                }
+                    email: email,
+                    password: password
+                };
 
-                location.href ="./reporter-dashboard.html"
-            } catch (error) {
-                res.status(400).json({ error: eror.message || "An error occured" })
+            const result = await login(data)
+            if (!result){
+                alert(result.error)
             }
-
+            alert ('Logged in sucessfully ....redirecting to dashboard')
+            window.location.href = './reporter-dashboard.html';
+            } catch (error) {
+                console.error('Error during login:', error);
+                alert(error.message || 'An error occurred during login');
+            }
         }
-
+        const loginForm = document.getElementById('loginForm');
+        if (loginForm) {
+            loginForm.addEventListener('submit', loginUser);
+        }
     </script>
 
 
